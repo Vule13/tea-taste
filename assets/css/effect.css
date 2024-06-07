@@ -9,9 +9,9 @@
   content: "";
   position: absolute;
   background: radial-gradient(#fff, transparent, transparent);
-  width: 800px;
-  opacity: 0.05;
-  height: 800px;
+  width: 900px;
+  opacity: 0.01;
+  height: 900px;
   top: var(--y);
   left: var(--x);
   transform: translate(-50%, -50%);
