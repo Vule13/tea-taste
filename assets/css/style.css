@@ -800,7 +800,7 @@ q {
   padding-left: 5px;
   width: 32px;
   vertical-align: top;
-  @media (max-width: 567px) {
+  @media (max-width: 576px) {
     display: none;
   }
 }
@@ -3488,13 +3488,16 @@ h6,
     height: 50px;
     background: transparent;
     cursor: pointer;
-    padding: 17px 14px;
+    padding: 15px 14px;
     right: 0;
     top: 17px;
     z-index: 400;
     transition: all 0.35s ease-out;
     -webkit-transition: all 0.35s ease-out;
     -ms-transition: all 0.35s ease-out;
+    @media (max-width: 576px) {
+      padding: 17px 14px;
+    }
   }
 
   .burger-menu span {
@@ -3836,7 +3839,7 @@ h6,
   text-align: center;
 }
 .layout-pr-item .layout-image {
-  max-height: 500px;
+  max-height: 300px;
   overflow: hidden;
   box-shadow: 0px 0px 20px 0 rgb(50 50 50 / 20%);
   border-radius: 5px;
