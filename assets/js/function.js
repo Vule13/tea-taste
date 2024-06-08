@@ -47,6 +47,12 @@ function IsMobile() {
       $(".js-spl-popup-click").show();
     });
 
+    $(".js-link-click-layout-style").on("click", function () {
+      var demo_url = $(this).closest(".shop-layout-thumb").attr("data-url");
+      $(".js-spl-popup-click-style .spl-btn-view-now").attr("href", demo_url);
+      $(".js-spl-popup-click-style").show();
+    });
+
     $(".js-click-product-layout").on("click", function () {
       var demo_url = $(this).closest(".layout-pr-box").attr("data-url");
       $(".js-spl-popup-click .spl-btn-view-now").attr("href", demo_url);
