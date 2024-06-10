@@ -91,7 +91,7 @@ function IsMobile() {
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1000,
       speed: 1000,
       responsive: [
@@ -106,7 +106,7 @@ function IsMobile() {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            arrows: false,
+            arrows: true,
           },
         },
         {
