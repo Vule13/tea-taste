@@ -781,12 +781,17 @@ q {
   padding-right: 0;
 }
 
+.container-homepage {
+  position: relative;
+  z-index: 1;
+}
+
 .header-link a {
   font-size: 14px;
   text-transform: uppercase;
-  display: inline-block;
-  height: 40px;
-  line-height: 28px;
+  display: flex;
+  line-height: 1;
+  align-items: center;
   border-radius: 50px;
   color: #008060;
   border: 2px solid;
