@@ -158,9 +158,6 @@
   box-shadow: 0px -9px 16px 0px rgb(158 158 158 / 40%);
 }
 
-.spl-bottom-cta h6 img {
-  margin-top: -6px;
-}
 
 @media screen and (max-width: 576px) {
   .spl-bottom-cta {
@@ -3492,9 +3489,10 @@ h6,
     height: 50px;
     background: transparent;
     cursor: pointer;
-    padding: 15px 14px;
+    padding: 16px 14px;
+    top: 50%;
     right: 0;
-    top: 17px;
+    transform: translateY(-50%);
     z-index: 400;
     transition: all 0.35s ease-out;
     -webkit-transition: all 0.35s ease-out;
@@ -3565,7 +3563,7 @@ h6,
 
   .menu-mobile-s {
     position: absolute;
-    top: 72px;
+    top: 60px;
     right: 0;
     width: 100%;
     padding: 0 0.75rem;
@@ -3595,6 +3593,11 @@ h6,
   }
 }
 
+@media (max-width: 576px) {
+  .menu-mobile-s {
+    top: 52px;
+  }
+}
 
 .col-2dot4,
 .col-lg-2dot4,
@@ -4003,12 +4006,13 @@ h6,
   cursor: pointer;
   transform: translateY(-5px);
 }
+
 .content-list-features .feature-box {
   background: #fff;
   box-shadow: 0 0 70px rgb(0 0 0 / 10%);
   border-radius: 20px;
   padding: 35px 35px;
-  transition: box-shadow 0.3s, transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 0.3s, transform 0.3s cubic-bezier(0.51, 0.68, 0.53, 0.65);
 }
 
 .feature-content {
@@ -4604,9 +4608,6 @@ h6,
   #img6 {
     width: 20px;
   }
-  .burger-menu {
-    top: 12px;
-  }
   .layout-pr-item .layout-image {
     max-height: 410px;
   }
@@ -5031,4 +5032,9 @@ span.new {
   &:hover {
     opacity: 0.6;
   }
+}
+
+.container-features {
+  z-index: 1;
+  position: relative;
 }
